@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>accounts</title>
+</head>
+<body>
+<a href="/">Home</a>
+
+<h1>Accounts of {{client.name}}</h1>
+
+<table border="1" style="border-style: solid">
+    <tr>
+        <th>ID</th>
+        <th>Client ID</th>
+        <th>Sum</th>
+    </tr>
+   {{#accounts}}
+        <tr>
+            <td>{{id}}</td>
+            <td>{{client}}</td>
+            <td>{{sum}}</td>
+        </tr>
+   {{/accounts}}
+</table>
+
+<br/>
+<div>
+        <form action="/addAcc" method="POST">
+            <h3>Add account</h3>
+            client id:<input type="number" value="{{client.id}}" name="id" placeholder="client id" />
+            Balance:<input type="number" name="sum" placeholder="sum" />
+            <button type="submit">Add</button>
+        </form>
+    </div>
+
+</body>
+</html>

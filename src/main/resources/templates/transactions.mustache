@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>transactions</title>
+</head>
+<body>
+<a href="/">Home</a>
+    <h1>transactions</h1>
+
+    <div>
+        <form method="post">
+            <input type="number" name="senderAcc" placeholder="sender" />
+            <input type="number" name="getterAcc" placeholder="getter" />
+            <input type="number" name="amount" placeholder="amount" />
+            <button type="submit">Add</button>
+        </form>
+    </div>
+
+<form method="post" action="filter">
+        <input type="number" name="filter">
+        <button type="submit">фильтр по аккаунту</button>
+    </form>
+
+<table border="1" style="border-style: solid">
+    <tr>
+        <th>ID</th>
+        <th>senderAcc</th>
+        <th>getterAcc</th>
+        <th>amount</th>
+        <th>time</th>
+    </tr>
+   {{#transactions}}
+        <tr>
+            <td>{{id}}</td>
+            <td>{{senderAcc}}</td>
+            <td>{{getterAcc}}</td>
+            <td>{{amount}}</td>
+            <td>{{time}}</td>
+        </tr>
+    {{/transactions}}
+</table>
+
+
+
+</body>
+</html>

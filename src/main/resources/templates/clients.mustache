@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>clients</title>
+</head>
+<body>
+<a href="/">Home</a>
+    <h1>clients</h1>
+
+    <table border="1">
+        <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>address</th>
+        <th>age</th>
+        </tr>
+
+        {{#clients}}
+        <tr>
+            <td>{{id}}</td>
+            <td><a href="/clients/{{id}}/accounts">{{name}}</td>
+            <td>{{address}}</td>
+            <td>{{age}}</td>
+        </tr>
+        {{/clients}}
+    </table>
+<br>
+<br>
+    <div>
+        <form method="POST">
+            <input type="text" name="name" placeholder="name" />
+            <input type="text" name="address" placeholder="address" />
+            <input type="number" name="age" placeholder="age" />
+            <button type="submit">Add</button>
+        </form>
+    </div>
+</body>
+</html>

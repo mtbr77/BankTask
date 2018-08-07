@@ -1,7 +1,7 @@
 from db folder run creation.sql to create empty db
 
 
-open project in Idea and run 
+open project in IntelliJ IDEA and run Application.main()
 
 
 open localhost:8080 in browser

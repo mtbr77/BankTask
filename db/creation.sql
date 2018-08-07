@@ -1,5 +1,5 @@
 create database bank;
 
-CREATE USER 'user'@'localhost' IDENTIFIED BY 'user';
-GRANT ALL PRIVILEGES ON bank.* TO 'user'@'localhost';
+CREATE USER 'user1'@'localhost' IDENTIFIED BY 'user1';
+GRANT ALL PRIVILEGES ON bank.* TO 'user1'@'localhost';
 

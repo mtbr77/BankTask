@@ -1,8 +1,6 @@
+This program emulates some simple functionality of bank and contains info about clients, accounts, transactions. 
+
 from db folder run creation.sql to create empty db
-
-
-open project in IntelliJ IDEA and run Application.main()
-
 
 open localhost:8080 in browser
 
